@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>XenIFTTT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="9dbf17aefc.js"></script>
+  </head>
+  <body>
+    <div class="circle" id="circle" onclick="toggleAction()"><i id="faItem" class="fas fa-7x"></i></div></a>
+  	<script>
+      var toggle = false;
+
+      document.getElementById('circle').style.backgroundColor = backgroundColor;
+      document.getElementById('circle').style.color = iconColor;
+      document.getElementById('circle').style.opacity = circleOpacity;
+      document.getElementById('faItem').classList.add("fa-" + iconType);
+
+      function requestURL(url, cb) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', "https://cors.jeffresc.workers.dev/?" + url);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                cb(true);
+            } else {
+                cb(false);
+            }
+        };
+        xhr.send();
+      }
+
+      function toggleAction() {
+        console.log("Fired! Currently: " + toggle);
+        if (toggle) {
+          requestURL(turnOffURL, function(success) {
+            if (success) {
+              toggle = false;
+              document.getElementById('circle').style.backgroundColor = backgroundColor;
+              document.getElementById('circle').style.color = iconColor;
+            }
+          });
+        } else {
+          requestURL(turnOnURL, function(success) {
+            if (success) {
+              toggle = true;
+              document.getElementById('circle').style.backgroundColor = iconColor;
+              document.getElementById('circle').style.color = backgroundColor;
+            }
+          });
+        }
+      }
+  	</script>
+  </body>
+</html>

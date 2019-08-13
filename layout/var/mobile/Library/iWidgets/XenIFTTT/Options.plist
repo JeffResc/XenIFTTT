@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>backgroundColor</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Background Color (Hex)</string>
+		<key>default</key>
+		<string>#000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>iconColor</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Icon Color (Hex)</string>
+		<key>default</key>
+		<string>#fff</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>turnOffURL</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Turn Off Webhook URL</string>
+		<key>default</key>
+		<string>https://maker.ifttt.com/trigger/[event]/with/key/[key]</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>turnOnURL</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Turn On Webhook URL</string>
+		<key>default</key>
+		<string>https://maker.ifttt.com/trigger/[event]/with/key/[key]</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>circleOpacity</string>
+		<key>type</key>
+		<string>select</string>
+		<key>label</key>
+		<string>Circle Opacity</string>
+		<key>default</key>
+		<string>50%</string>
+		<key>options</key>
+		<dict>
+			<key>10%</key>
+			<string>0.1</string>
+			<key>20%</key>
+			<string>0.2</string>
+			<key>30%</key>
+			<string>0.3</string>
+			<key>40%</key>
+			<string>0.4</string>
+			<key>50%</key>
+			<string>0.5</string>
+			<key>60%</key>
+			<string>0.6</string>
+			<key>70%</key>
+			<string>0.7</string>
+			<key>80%</key>
+			<string>0.8</string>
+			<key>90%</key>
+			<string>0.9</string>
+			<key>100%</key>
+			<string>1.0</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>iconType</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Font Awesome 4.7.0 Icon</string>
+		<key>default</key>
+		<string>lightbulb</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,9 @@
+Package: com.jeffresc.xenifttt
+Name: XenIFTTT
+Depends: com.matchstic.xenhtml
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Use XenHTML to control IFTTT devices
+Maintainer: JeffResc
+Author: JeffResc
+Section: Widgets

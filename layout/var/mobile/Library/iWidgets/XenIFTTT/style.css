@@ -1,0 +1,16 @@
+body {
+	background: transparent;
+}
+
+.circle {
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	width: 75px;
+	height: 75px;
+}
+
+i {
+	padding: 25% 0;
+	font-size: 230% !important;
+}
